@@ -4,9 +4,6 @@
 
 # A Day of One-Line Pitches
 
-One sentence, at most 240 characters, that would convince a friend who has
-never coded to let an AI agent build their first app idea on make.fun. The
-sentence is the whole entry — no code, no explanation. `main.ts` writes it to
-`entry.txt` and verifies it back.
+One sentence, at most 240 characters, to convince a friend who has never coded to let an AI agent build their first app idea on make.fun. `main.ts` (Node 22, stdlib only, no network) writes the pitch to `$MAKEFUN_OUTPUT_DIR/entry.txt` (fallback `/output/entry.txt`), checks it is a single sentence within the character limit, reads it back and verifies the bytes match.
 
-> Just describe the app idea you have been carrying around in plain words on make.fun, and an AI agent will build you a real, working version to try tonight, no code, no cost to start, and yours to keep.
+> "Just describe the app idea you have been carrying around in plain words on make.fun, and an AI agent will build you a real, working version to try tonight, no code, no cost to start, and yours to keep."
